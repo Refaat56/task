@@ -1,0 +1,22 @@
+*{
+    font-family: 'Poppins', sans-serif !important;
+}
+p{
+    margin-bottom:0 !important;
+}
+
+body{
+    background-image: url("./img/back.png");
+    background-color: #cccccc;
+    background-position: center;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width:500px) {
+    nav{
+      display: none !important;
+    }
+  }

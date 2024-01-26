@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --header-color:#B35753;
+    --green-color:#126c45;
+    --bg-green-color:rgba(2, 190, 109, 0.76);
+    --text-color:#777;
+}
+/* nav section */
+body{
+ 
+    min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.reOrder{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 80px 0;
+}
+.re-order-img{
+    position: absolute;
+    left: 0px;
+    top: -60px;
+    width: 150px;
+}
+.reOrder h2{
+    color: #cc1c31;
+    font-weight: 400;
+}
+.reOrder-img-left{
+    position: absolute;
+    width: 300px;
+    left:-130px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.reOrder-img-right{
+    position: absolute;
+    width: 200px;
+    right:-120px;
+    bottom: -40px;
+}
+.re-order{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.re-order p{
+    margin: 0;
+}
+.re-order .reOrder-date{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}/* 
+.re-order .reOrder-date div{
+    display: flex;
+    align-items: center ;
+}
+.re-order .reOrder-date div p{
+    color: var(--bg-green-color);
+    font-size: 20px;
+}
+.re-order .reOrder-date div span{
+    color: var(--text-color);
+    padding-left: 5px;
+} */
+.reOrder-date-time,.reOrder-date-expected{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4px auto;
+}
+.reOrder-date-expected{
+    margin-left: 50px;
+}
+.r2{
+    margin-left: 80px;
+}
+.r3{
+    margin-right: 40px;
+}
+.reOrder-date-time div,.reOrder-date-expected div{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.reOrder-date-time div p,.reOrder-date-expected div p{
+    margin: 0;
+    padding-right: 5px;
+    color: var(--bg-green-color);
+}
+.reOrder-date-time div span,.reOrder-date-expected div span{
+    margin: 0;
+    padding-right: 5px;
+    color: var(--text-color)
+}
+
+
+@media (max-width:800px) {
+ 
+    .reOrder-date-time ,.reOrder-date-expected {
+        align-items: start;
+       flex-direction: column;
+       margin: 0;
+        }
+
+        .reOrder-date-expected{
+            flex-direction: column-reverse;
+        }
+        .reOrder-date-time div ,.reOrder-date-expected div{
+            margin: 10px 0;
+           
+        }
+        .reOrder-img-left{
+           display: none;
+        }
+        
+        .reOrder-img-right{
+            display: none;
+        }
+}
+
+.re-order-order{
+    display: flex;
+    align-items: center;
+}
+.re-order-order-table{
+    margin-top: 0px;
+}
+.re-order-order-table tr{
+    border-bottom: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+    padding: 10px;
+}
+.re-order-order-table tr td{
+    color: var(--text-color);
+}
+.re-order-order-table tr td:first-child{
+color: #A31627;
+}
+.re-order-order-table tr td:last-child{
+    color: var(--bg-green-color);
+}
+.re-order-order-table tr td{
+    padding: 10px;
+}
+.adbtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.adbtn button{
+    width: 9rem;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #A31627;
+    color: white;
+    font-size: 15px;
+    font-weight:bold ;
+}
+.re-order-order-price{
+    margin-left: 150px;
+    margin-top: 0px;
+}
+.re-order-order-price1{
+    display: flex;
+    align-items: center ;
+    margin-bottom: 40px;
+}
+.re-order-order-price1 p{color: var(--bg-green-color);
+    font-size: 20px;}
+.re-order-order-price1 span{
+
+    color: var(--text-color);
+    padding-left: 5px;
+} 
+.address-cart{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px black;
+    display: none;    
+}
+.address-info{
+    display: flex;
+    justify-content: space-between;
+}
+.address-info1 {
+    display: flex;
+}
+.address-cart h5{
+    text-align: center;
+}
+.address-cart p{
+    margin: 0;
+
+}
+@media (max-width:767px){
+    .reOrder-date-expected{
+        margin-left: 0px;
+    }
+    .r2{
+        margin-left: 0px;
+    }
+    .r3{
+        margin-right: 0px;
+    }
+    .re-order{
+        width: 100%;
+        text-align: center;
+    }
+    .re-order-order{
+       flex-direction: column;
+    
+  
+    }
+    .reOrder-date{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    }
+    .adbtn {
+      margin: auto;
+    }
+    .re-order-order-price{
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    .address-cart{
+        margin: 20px 0;
+            display: inline-block;
+    }
+}

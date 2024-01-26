@@ -1,0 +1,46 @@
+.input-center{
+    display: flex;
+    justify-content: center;
+}
+.address_menu {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 15%;
+    height: 50vh;
+    border:2px solid #0A5434;
+    border-radius: 5px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+
+}
+.address_menu li{
+
+    display: inline-block;
+    padding: 0;
+    margin:  0;
+    font-size: 25px;
+    transition: all 0.5s ease-in;
+}
+.addressColor{
+    color: #A31627;
+    font-family: sans-serif;
+    letter-spacing:1px;
+    font-size: 2em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width:1px ;
+}
+.address_menu li:hover{
+    color: #A31627;
+    font-family: sans-serif;
+    
+
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width:1px ;
+}
+.r{
+    position: relative;
+    overflow: hidden;
+}
