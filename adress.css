@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --header-color:#B35753;
+    --green-color:#126c45;
+    --bg-green-color:rgba(43, 253, 162, 0.76);
+    --text-color:#777;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.r{
+    width: 100%;
+    position: relative;
+}
+.address{
+    width: 90%;
+    margin:60px auto;
+    position: relative;
+}
+.address1{
+    margin-top: 0px;
+    margin-left: 25px !important;
+}
+.address-cart{
+    
+    padding: 10px;
+
+}
+.address-cart h5{
+    text-align: center;
+    color: #A31627;
+}
+.address-cart p{
+    margin: 0;
+
+}
+.address-infoo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.address_menu {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 15%;
+    height: 50vh;
+    border:2px solid #0A5434;
+    border-radius: 5px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    margin: auto;
+
+}
+.address_menu li{
+
+    display: inline-block;
+    padding: 0;
+    margin:  0;
+    font-size: 25px;
+    transition: all 0.5s ease-in;
+}
+.addressColor{
+    color: #A31627;
+    font-family: sans-serif;
+    letter-spacing:1px;
+    font-size: 2em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width:1px ;
+}
+.address_menu li:hover{
+    color: #A31627;
+    font-family: sans-serif;
+    
+
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width:1px ;
+}
+.address-info {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.address-info1 {
+    display: flex;
+}
+.address-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.address-btn button{
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+}
+.edit button{color: var(--green-color);}
+.remove button{
+    color: #A31627;
+}
+
+.address_menu li:hover{
+   cursor: pointer;
+}
+.address-cart{
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--green-color);
+}
+.address-add {
+    position: absolute;
+    right: 18%;
+    bottom: 10%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #0A5434;
+    font-size: 25px;
+    
+}
+.address-add button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-top: -3px;
+    
+}
+.address-location{
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+   
+    z-index: -100;
+}   
+.address-location img{
+    height: 180px;
+} 
+.address-input{
+    display: none   ;
+    margin: 40px auto;
+}
+@media (max-width:1150px) {
+    .address_menu {
+    
+        margin:40px auto;
+    
+    }
+    .address-add {
+      right:20px;
+        bottom: 2%;
+       
+        
+    }
+    .address-infoo{
+        flex-direction: column;
+        
+    }
+    .address_menu{
+        flex-direction: row;
+        width:80%;
+        justify-content: center;
+        height: auto;
+        padding-left: 0;
+    }
+    .address_menu li{
+      padding: 0 10px;
+    }
+    .info p{
+      padding: 0;
+    
+    }
+    
+}
+.address h3{
+    display: none;
+}
+@media (max-width:610px) {
+    .address h3{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    .address_menu{
+        flex-direction: row;
+        width:100%;
+        justify-content: center;
+        height: auto;
+        padding-left: 0;
+        display: none;
+    }
+    .address_menu li{
+        font-size: 20px;
+      padding: 0 5px; 
+    }
+    .address-cart-img {
+
+        justify-content: space-around;
+    
+    }
+    .address-location{
+      display: none;
+    } 
+    .address-add{
+        display: none;
+    }
+    .address-input{
+        display: inline-block;
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+    .address-input input{
+        width: 60%;
+        padding: 5PX;
+        padding-left: 40px;
+        margin: auto;
+        border-color: var(--green-color);
+        border-radius: 5px;
+    }
+    .address-input p{
+        margin: 0;
+        position: absolute;
+        top: -7px;
+        left: 22%;
+        font-size: 30px;
+        color: var(--text-color);
+    }
+    
+}
